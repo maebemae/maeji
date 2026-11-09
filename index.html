@@ -4,15 +4,24 @@
 	</head>
 	<body style="background: linear-gradient(45deg,#b5e8c3,#d6e8b5)" >
 		<div style="text-align: center; margin: auto;">
-			<h1> Living in Central Europe </h1>
-			<img src="./goat.jpg" alt="Goat jumping in a field"/>
-		</div>
-		<div>
-			<br/><br/>
-			<hr/>
-			<p align="center">
-				If you have any comments about our WEB page, you can write to us. However, due to limited number of personnel we are unable to provide a direct response.
-			</p>
+			<div>
+				<h1> Living in Central Europe </h1>
+				<img src="./goat.jpg" alt="Goat jumping in a field"/>
+			</div>
+			<div>
+				<br/><br/><br/>
+				<hr/>
+				<p align="center">
+				If you have any comments about our WEB page, you can <a href="#" onclick="document.getElementById('contactModal').showModal(); return false;">write to us</a>. However, due to limited number of personnel we are unable to provide a direct response.
+				</p>
+			</div>
+			<dialog id="contactModal">
+				<img src="./contact.gif" />
+				<br/><br/><br/>
+					<form method="dialog">
+						<button type="close" aria-label="Close">Actually maebe don't.</button>
+					</form>
+			</dialog>
 		</div>
 	</body>
 </html>
