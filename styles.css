@@ -34,9 +34,11 @@ img {
 	display: inline-block;
 	font-size: 2rem;
 	white-space: nowrap;
+	/*
 	background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #ab9b22, #f9a825, #ff5722);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	*/
 }
 .wave-text span {
 	display: inline-block;
@@ -44,10 +46,10 @@ img {
 }
 @keyframes wave {
 	0%, 100% {
-		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
 	}
 	50% {
-		transform: translateY(-5px);
+		-webkit-transform: translateY(-5px);
 	}
 }
 .wave-text span:nth-child(1) { animation-delay: 0s; }
